@@ -1,7 +1,7 @@
 ﻿<?php
 
 // Replace this with your own email address
-$siteOwnersEmail = 'user@website.com';
+$siteOwnersEmail = 'oriana.smq@gmail.com';
 
 
 if($_POST) {
@@ -13,15 +13,15 @@ if($_POST) {
 
    // Check Name
 	if (strlen($name) < 2) {
-		$error['name'] = "Please enter your name.";
+		$error['name'] = "Por favor ingresa tu email";
 	}
 	// Check Email
 	if (!preg_match('/^[a-z0-9&\'\.\-_\+]+@[a-z0-9\-]+\.([a-z0-9\-]+\.)*+[a-z]{2}/is', $email)) {
-		$error['email'] = "Please enter a valid email address.";
+		$error['email'] = "Por favor ingresa un email valido";
 	}
 	// Check Message
 	if (strlen($contact_message) < 15) {
-		$error['message'] = "Please enter your message. It should have at least 15 characters.";
+		$error['message'] = "Por favor ingresa tu mensaje.";
 	}
    // Subject
 	if ($subject == '') { $subject = "Contact Form Submission"; }
